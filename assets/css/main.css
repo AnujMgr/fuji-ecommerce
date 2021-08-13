@@ -160,9 +160,25 @@ input[type="radio"]:checked + label span {
 }
 
 .large-dropdown {
-  top: 43px !important;
+  top: 45px !important;
   border-radius: 0px;
   width: 100%;
+}
+.has-megamenu:hover .megamenu {
+  display: block;
+}
+
+.megamenu-item {
+  height: 14em;
+}
+.h-16 {
+  height: 16em;
+}
+.h-22 {
+  height: 22em;
+}
+.grid-container {
+  height: 650px;
 }
 
 /* ============ desktop view ============ */
@@ -188,11 +204,8 @@ input[type="radio"]:checked + label span {
     margin-top: 10px;
   }
 }
-
-.megamenu-item {
-  height: 14em;
-}
-
-.h-22 {
-  height: 22em;
+@media (max-width: 767px) {
+  .grid-container {
+    height: auto;
+  }
 }

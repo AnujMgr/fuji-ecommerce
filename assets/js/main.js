@@ -5,10 +5,10 @@ $("#main-banner").owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 5000,
-  freeDrag: false,
-  pullDrag: false,
-  touchDrag: false,
-  mouseDrag: false,
+  freeDrag: true,
+  pullDrag: true,
+  touchDrag: true,
+  mouseDrag: true,
   animateIn: "fadeIn", // add this
   animateOut: "fadeOut", // and this
   responsive: {
