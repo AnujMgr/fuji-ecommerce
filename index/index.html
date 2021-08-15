@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body>
     <header class="bg-dark d-flex flex-row-reverse flex-direction-row">
@@ -36,12 +36,12 @@
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li>
             <a class="dropdown-item d-flex justify-content-between" href="#"
-              >Japan<img src="./assets//img/japan.png"
+              >Japan<img src="../assets/img/japan.png"
             /></a>
           </li>
           <li>
             <a class="dropdown-item d-flex justify-content-between" href="#"
-              >English <img src="./assets//img/uk.png"
+              >English <img src="../assets//img/uk.png"
             /></a>
           </li>
         </ul>
@@ -62,7 +62,7 @@
         z-index-2
       "
     >
-      <div class="container-xxl">
+      <div class="container-xl px-3 px-xxl-5">
         <button
           class="navbar-toggler"
           type="button"
@@ -135,7 +135,36 @@
           </div>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              <div class="dropdown hoverable-dropdown">
+                <a
+                  class="nav-link text-white"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </a>
+                <!-- <a class="nav-link dropdown active" aria-current="page" href="#">HOME</a> -->
+                <ul
+                  class="dropdown-menu hoverable-dropdown-menu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Home</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Catalog</a></li>
+                  <li><a class="dropdown-item" href="#">Collections</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">About Us</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">CATALOG</a>
@@ -154,36 +183,36 @@
                           list-group-item
                           border-0
                           p-1
-                          footer-item
+                          hoverable-item
                           bg-transparent
                         "
                       >
                         <a class="text-muted" href="#">Delivery</a>
                       </li>
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">Legal Notice</a>
                       </li>
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">About Us</a>
                       </li>
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">Contact Us</a>
                       </li>
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">Terms and conditions</a>
                       </li>
                     </ul>
                     <ul class="list-group col-md-2">
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">Personal info</a>
                       </li>
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">Orders</a>
                       </li>
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">My Cart</a>
                       </li>
-                      <li class="list-group-item border-0 p-1 footer-item">
+                      <li class="list-group-item border-0 p-1 hoverable-item">
                         <a class="text-muted" href="#">Addresses</a>
                       </li>
                     </ul>
@@ -283,20 +312,164 @@
               </button>
             </li>
             <li class="nav-item">
-              <button class="btn text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-bag"
-                  viewBox="0 0 16 16"
+              <div class="dropdown hoverable-dropdown">
+                <div class="position-relative">
+                  <a
+                    class="nav-link text-white"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-bag"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                      />
+                    </svg>
+                  </a>
+                  <span
+                    class="
+                      badge
+                      bg-dark
+                      position-absolute
+                      top-0
+                      start-100
+                      translate-middle
+                    "
+                    >4</span
+                  >
+                </div>
+
+                <!-- <a class="nav-link dropdown active" aria-current="page" href="#">HOME</a> -->
+                <div
+                  class="
+                    dropdown-menu
+                    cart-dropdown-menu
+                    rounded-0
+                    py-3
+                    px-4
+                    border-0
+                    elevate-1
+                  "
+                  aria-labelledby="dropdownMenuLink"
                 >
-                  <path
-                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                  />
-                </svg>
-              </button>
+                  <div class="row">
+                    <div class="row border-bottom">
+                      <div class="col-6">
+                        <img
+                          class="img-fluid text-center"
+                          src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/makita-lxt601-18-volt-lxt-6-piece-lithium-ion-cordless-combo-kit_1_140x140_crop_center.png?v=1595925419"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <a class="text-dark" href="#">
+                          <div class="text-truncate">
+                            Praeterea iter est quasdam res quas ex communi.
+                          </div>
+                        </a>
+                        <p class="fw-bold mb-1">$ 120.00</p>
+                        <p class="text-muted mb-1">Quantity: 1</p>
+                        <h6 class="text-end">
+                          <button class="btn hoverable-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              class="bi bi-trash"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+                              />
+                            </svg>
+                          </button>
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div class="row border-bottom">
+                      <div class="col-6 text-center">
+                        <img
+                          class="img-fluid"
+                          src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/makita-lxt601-18-volt-lxt-6-piece-lithium-ion-cordless-combo-kit_1_140x140_crop_center.png?v=1595925419"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <a class="text-dark" href="#">
+                          <div class="text-truncate">
+                            Praeterea iter est quasdam res quas ex communi.
+                          </div>
+                        </a>
+                        <p class="fw-bold mb-1">$ 120.00</p>
+                        <p class="text-muted mb-1">Quantity: 1</p>
+                        <h6 class="text-end">
+                          <button class="btn hoverable-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              class="bi bi-trash"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+                              />
+                            </svg>
+                          </button>
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div class="d-flex my-2">
+                      <div class="d-flex align-items-end">
+                        <a href="#" class="text-muted"
+                          ><span class="me-5">Clear Cart</span></a
+                        >
+                      </div>
+                      <div class="mx-auto">
+                        <span>Total Price:</span>
+                        <span class="h3"> $200.00</span>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-6 text-center">
+                        <a
+                          href="#"
+                          class="btn btn-outline-warning rounded-0 px-5"
+                        >
+                          Checkout
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a
+                          href="#"
+                          class="btn btn-warning text-white rounded-0 px-5"
+                        >
+                          Go to cart
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -377,7 +550,7 @@
               class="w-100 h-100 obj-fit-cover"
               src="https://cdn.shopify.com/s/files/1/0448/0765/1493/files/slide_2_1920x700_crop_top.png?v=1596027000"
             />
-            <div class="caption px-5 text-white">
+            <div class="container-xl px-3 px-xxl-5 caption text-white">
               <p class="mb-0">
                 Choose from the world's biggest professional tool
               </p>
@@ -401,7 +574,7 @@
               class="w-100 h-100 obj-fit-cover"
               src="https://cdn.shopify.com/s/files/1/0448/0765/1493/files/slide_1_1920x700_crop_top.png?v=1596026975"
             />
-            <div class="caption px-5 text-white">
+            <div class="container-xl px-3 px-xxl-5 caption text-white">
               <p class="mb-0 text-dark">
                 Choose from the world's biggest professional tool brands
               </p>
@@ -425,7 +598,7 @@
 
     <!-- Icons Menu Section -->
     <section class="bg-primary">
-      <div class="container-xl text-white py-5">
+      <div class="container-xl text-white py-5 px-3 px-xxl-5">
         <div class="row">
           <div class="col-xs-12 col-sm text-center">
             <a href="#">
@@ -557,7 +730,7 @@
 
     <!-- Grid Box Section -->
     <section class="my-5">
-      <div class="container-xl">
+      <div class="container-xl px-3 px-xxl-5">
         <div class="row g-3 flex-column-reverse flex-md-row grid-container">
           <div class="col-md-8">
             <div class="flex flex-direction-column gap-0">
@@ -603,17 +776,26 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 position-relative p-0 h-100">
-            <img
-              class="h-100 w-100 obj-fit-cover"
-              src="https://cdn.shopify.com/s/files/1/0448/0765/1493/files/ban_3_590x789_crop_center.png?v=1596018403"
-            />
-            <div
-              class="position-absolute bottom-0 p-4 text-white col-6 z-index-1"
-            >
-              <p class="mb-1">Starting from $ 4.00</p>
-              <h1>Professional tools for handymen</h1>
-              <a href="#" class="btn btn-success rounded-0"> Shop Now </a>
+          <div class="col-md-4 h-100">
+            <div class="position-relative p-0 h-100">
+              <img
+                class="h-100 w-100 obj-fit-cover"
+                src="https://cdn.shopify.com/s/files/1/0448/0765/1493/files/ban_3_590x789_crop_center.png?v=1596018403"
+              />
+              <div
+                class="
+                  position-absolute
+                  bottom-0
+                  p-4
+                  text-white
+                  col-6
+                  z-index-1
+                "
+              >
+                <p class="mb-1">Starting from $ 4.00</p>
+                <h1>Professional tools for handymen</h1>
+                <a href="#" class="btn btn-success rounded-0"> Shop Now </a>
+              </div>
             </div>
           </div>
         </div>
@@ -621,11 +803,11 @@
     </section>
 
     <!-- New Products Section-->
-    <section class="my-5 container-xl">
+    <section class="my-5 container-xl px-3 px-xxl-5">
       <h4 class="text-center mb-4">New Products</h4>
       <div class="row g-3">
         <!-- Unavailable Product -->
-        <div class="col-6 col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -697,12 +879,17 @@
                   WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                 </p>
               </a>
-              <h6>$74.00</h6>
+              <div>
+                <span class="fw-bold"> $74.00 </span>
+                <span class="fw-bold text-warning text-decoration-line-through"
+                  >$ 70.00</span
+                >
+              </div>
             </div>
           </div>
         </div>
         <!-- Product with Add to Cart Option-->
-        <div class="col-6 col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -774,12 +961,14 @@
                   WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                 </p>
               </a>
-              <h6>$74.00</h6>
+              <div>
+                <span class="fw-bold"> $74.00 </span>
+              </div>
             </div>
           </div>
         </div>
         <!-- Product with Variation -->
-        <div class="col-6 col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -831,7 +1020,7 @@
               </div>
               <div class="product-overlay-items d-none d-lg-block">
                 <button
-                  class="btn bg-primary text-white rounded-0"
+                  class="btn bg-primary text-white rounded-0 btn-variant"
                   data-bs-toggle="modal"
                   data-bs-target="#variantModal"
                 >
@@ -846,29 +1035,18 @@
                   bg-white
                   p-2
                   py-3
-                  d-none d-lg-block
+                  d-none d-lg-flex
+                  gap-2
                 "
               >
-                <input type="radio" name="color" id="variation5" value="red" />
-                <label for="variation5"
-                  ><span
-                    class="elevate-1 rounded-2"
-                    style="background-color: red"
-                  ></span
-                ></label>
-
-                <input
-                  class="product-variation"
-                  type="radio"
-                  name="color"
-                  id="variation6"
-                />
-                <label for="variation6"
-                  ><span
-                    class="elevate-1 rounded-2"
-                    style="background-color: green"
-                  ></span
-                ></label>
+                <div
+                  class="color-swatch rounded-2 elevate-1"
+                  style="background-color: red"
+                ></div>
+                <div
+                  class="color-swatch rounded-2 elevate-1"
+                  style="background-color: blue"
+                ></div>
               </div>
             </div>
             <div class="">
@@ -877,11 +1055,13 @@
                   WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                 </p>
               </a>
-              <h6>$74.00</h6>
+              <div>
+                <span class="fw-bold"> $74.00 </span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -943,34 +1123,22 @@
               <div
                 class="
                   product-overlay-options
-                  input-variation
                   position-absolute
                   bg-white
                   p-2
                   py-3
-                  d-none d-lg-block
+                  d-none d-lg-flex
+                  gap-2
                 "
               >
-                <input type="radio" name="color" id="variation7" value="red" />
-                <label for="variation7"
-                  ><span
-                    class="elevate-1 rounded-2"
-                    style="background-color: red"
-                  ></span
-                ></label>
-
-                <input
-                  class="product-variation"
-                  type="radio"
-                  name="color"
-                  id="variation8"
-                />
-                <label for="variation8"
-                  ><span
-                    class="elevate-1 rounded-2"
-                    style="background-color: green"
-                  ></span
-                ></label>
+                <div
+                  class="color-swatch rounded-2 elevate-1"
+                  style="background-color: red"
+                ></div>
+                <div
+                  class="color-swatch rounded-2 elevate-1"
+                  style="background-color: blue"
+                ></div>
               </div>
             </div>
             <div class="">
@@ -979,16 +1147,18 @@
                   WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                 </p>
               </a>
-              <h6>$74.00</h6>
+              <div>
+                <span class="fw-bold"> $74.00 </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="my-5 container-xl">
+    <section class="my-5 container-xl px-3 px-xxl-5">
       <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 mt-3 md-md-0">
           <a href="#">
             <div class="border">
               <h5 class="text-center mt-4 text-dark">Power Tools</h5>
@@ -1001,7 +1171,7 @@
             </div>
           </a>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 mt-3 md-md-0">
           <a href="#">
             <div class="border">
               <h5 class="text-center mt-4 text-dark">Hand Tools</h5>
@@ -1014,7 +1184,7 @@
             </div>
           </a>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 mt-3 md-md-0">
           <a href="#">
             <div class="border">
               <h5 class="text-center mt-4 text-dark">Lawn & Garden</h5>
@@ -1031,48 +1201,61 @@
     </section>
 
     <!-- Featured Products Section -->
-    <section class="my-5 container-xl">
+    <section class="my-5 container-xl px-3 px-xxl-5">
       <h5 class="text-center mb-4">Featured Products</h5>
       <div class="row">
-        <div class="col-12 col-md-4 position-relative p-0">
-          <img
-            class="h-100 w-100 obj-fit-cover"
-            src="https://cdn.shopify.com/s/files/1/0448/0765/1493/files/ban_featured_products_380x602_crop_center.png?v=1596020099"
-          />
+        <div class="col-12 col-md-4">
           <div
-            class="
-              position-absolute
-              bottom-0
-              mb-5
-              p-4
-              text-white
-              col-12
-              z-index-1
+            class="position-relative h-100 featured-img"
+            style="
+              background-image: url(https://cdn.shopify.com/s/files/1/0448/0765/1493/files/ban_featured_products_380x602_crop_center.png?v=1596020099);
             "
           >
-            <div class="d-flex">
-              <div>
-                <h1 class="mb-1 display-4 fw-bold">Drills</h1>
-                <h5 class="text-warning mb-3">Starting From</h5>
+            <div
+              class="
+                position-absolute
+                bottom-0
+                mb-5
+                p-4
+                text-white
+                col-12
+                z-index-1
+              "
+            >
+              <div class="d-flex">
+                <div>
+                  <h1 class="mb-1 display-4 fw-bold">Drills</h1>
+                  <h5 class="text-warning mb-3">Starting From</h5>
+                </div>
+                <h1 class="text-warning display-4 fw-bold">$29</h1>
               </div>
-              <h1 class="text-warning display-4 fw-bold">$29</h1>
+              <a href="#" class="btn btn-warning text-white rounded-0">
+                Shop Now
+              </a>
             </div>
-            <a href="#" class="btn btn-warning text-white rounded-0">
-              Shop Now
-            </a>
+            <div class="overlay position-absolute top-0 bottom-0"></div>
           </div>
-          <div class="overlay position-absolute top-0 bottom-0"></div>
         </div>
         <div class="col-12 col-md-8 mt-3 mt-md-0">
-          <div class="row g-2">
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
-                        src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/porter-cable-892-2-1-4-horsepower-router_1_280x280_crop_top.png?v=1595925434"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
+                        src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/dewalt-dw920k-2-1-4-inch-7-2-volt-cordless-two-position-screwdriver-kit_1_377x380.png?v=1595925372"
                         alt="Card image cap"
                       />
                     </figure>
@@ -1119,17 +1302,29 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
                         src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/makita-lxt601-18-volt-lxt-6-piece-lithium-ion-cordless-combo-kit_1_280x280_crop_top.png?v=1595925419"
                         alt="Card image cap"
                       />
@@ -1177,17 +1372,29 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
                         src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/makita-lct200w-18-volt-compact-lithium-ion-cordless-combo-kit-2-piece_1_280x280_crop_top.png?v=1595925407"
                         alt="Card image cap"
                       />
@@ -1235,17 +1442,29 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
                         src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/lgi-premium-watch-repair-kit-with-reusable-aluminum-box_1_280x280_crop_top.png?v=1595925393"
                         alt="Card image cap"
                       />
@@ -1293,17 +1512,29 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
                         src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/dewalt-dw920k-2-1-4-inch-7-2-volt-cordless-two-position-screwdriver-kit_1_280x280_crop_top.png?v=1595925372"
                         alt="Card image cap"
                       />
@@ -1351,17 +1582,29 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
                         src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/dewalt-dw618b3-12-amp-2-1-4-horsepower-plunge-base-and-fixed-base_1_280x280_crop_top.png?v=1595925355"
                         alt="Card image cap"
                       />
@@ -1409,17 +1652,29 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
                         src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/dewalt-dck290l2-20-volt-max-li-ion-3-0-ah-hammer-drill-and-impact-driver-combo-kit_1_280x280_crop_top.png?v=1595925340"
                         alt="Card image cap"
                       />
@@ -1467,17 +1722,33 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                    <span
+                      class="fw-bold text-warning text-decoration-line-through"
+                      >$ 70.00</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="card rounded-0 border-0 h-20">
-                <div class="position-relative overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="card rounded-0 border-0">
+                <div class="position-relative">
                   <a href="#">
-                    <figure class="h-20 border mb-0">
+                    <figure
+                      class="h-12 border mb-0 overflow-hidden position-relative"
+                    >
                       <img
-                        class="w-100 obj-fit-cover"
+                        class="
+                          position-absolute
+                          top-0
+                          bottom-0
+                          m-auto
+                          w-100
+                          obj-fit-cover
+                          align-middle
+                        "
                         src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/wen-61720-3-4-inch-to-2-inch-18-gauge-brad-nailer_1_346x346_crop_top.png?v=1595925507"
                         alt="Card image cap"
                       />
@@ -1525,7 +1796,9 @@
                       WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                     </p>
                   </a>
-                  <h6>$74.00</h6>
+                  <div>
+                    <span class="fw-bold"> $74.00 </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1535,7 +1808,7 @@
     </section>
 
     <!-- Sale Section -->
-    <section class="my-5 container-xl">
+    <section class="my-5 container-xl px-3 px-xxl-5">
       <h5 class="text-center my-4">On Sale</h5>
       <div class="row">
         <div id="on-sale" class="owl-carousel owl-theme">
@@ -1585,7 +1858,7 @@
                 </div>
                 <div class="product-overlay-items d-none d-lg-block">
                   <button
-                    class="btn bg-primary text-white rounded-0"
+                    class="btn bg-primary text-white rounded-0 btn-variant"
                     data-bs-toggle="modal"
                     data-bs-target="#variantModal"
                   >
@@ -1595,39 +1868,22 @@
                 <div
                   class="
                     product-overlay-options
-                    input-variation
                     position-absolute
                     bg-white
                     p-2
                     py-3
-                    d-none d-lg-block
+                    d-none d-lg-flex
+                    gap-2
                   "
                 >
-                  <input
-                    type="radio"
-                    name="color"
-                    id="variation25"
-                    value="red"
-                  />
-                  <label for="variation25"
-                    ><span
-                      class="elevate-1 rounded-2"
-                      style="background-color: red"
-                    ></span
-                  ></label>
-
-                  <input
-                    class="product-variation"
-                    type="radio"
-                    name="color"
-                    id="variation31"
-                  />
-                  <label for="variation31"
-                    ><span
-                      class="elevate-1 rounded-2"
-                      style="background-color: blue"
-                    ></span
-                  ></label>
+                  <div
+                    class="color-swatch rounded-2 elevate-1"
+                    style="background-color: red"
+                  ></div>
+                  <div
+                    class="color-swatch rounded-2 elevate-1"
+                    style="background-color: blue"
+                  ></div>
                 </div>
               </div>
               <div class="">
@@ -1636,7 +1892,9 @@
                     WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                   </p>
                 </a>
-                <h6>$74.00</h6>
+                <div>
+                  <span class="fw-bold"> $74.00 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1706,7 +1964,9 @@
                     WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                   </p>
                 </a>
-                <h6>$74.00</h6>
+                <div>
+                  <span class="fw-bold"> $74.00 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1768,7 +2028,7 @@
                 </div>
                 <div class="product-overlay-items d-none d-lg-block">
                   <button
-                    class="btn bg-primary text-white rounded-0"
+                    class="btn bg-primary text-white rounded-0 btn-variant"
                     data-bs-toggle="modal"
                     data-bs-target="#variantModal"
                   >
@@ -1783,34 +2043,18 @@
                     bg-white
                     p-2
                     py-3
-                    d-none d-lg-block
+                    d-none d-lg-flex
+                    gap-2
                   "
                 >
-                  <input
-                    type="radio"
-                    name="product"
-                    id="variation20"
-                    value="red"
-                  />
-                  <label for="variation20"
-                    ><span
-                      class="elevate-1 rounded-2"
-                      style="background-color: red"
-                    ></span
-                  ></label>
-
-                  <input
-                    class="product-variation"
-                    type="radio"
-                    name="product"
-                    id="variation21"
-                  />
-                  <label for="variation21"
-                    ><span
-                      class="elevate-1 rounded-2"
-                      style="background-color: blue"
-                    ></span
-                  ></label>
+                  <div
+                    class="color-swatch rounded-2 elevate-1"
+                    style="background-color: red"
+                  ></div>
+                  <div
+                    class="color-swatch rounded-2 elevate-1"
+                    style="background-color: blue"
+                  ></div>
                 </div>
               </div>
               <div class="">
@@ -1819,7 +2063,9 @@
                     WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                   </p>
                 </a>
-                <h6>$74.00</h6>
+                <div>
+                  <span class="fw-bold"> $74.00 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1901,7 +2147,9 @@
                     WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                   </p>
                 </a>
-                <h6>$74.00</h6>
+                <div>
+                  <span class="fw-bold"> $74.00 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1983,7 +2231,9 @@
                     WEN 61720 3-4-Inch to 2-Inch 18-Gauge Brad Nailer
                   </p>
                 </a>
-                <h6>$74.00</h6>
+                <div>
+                  <span class="fw-bold"> $74.00 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1991,7 +2241,7 @@
       </div>
     </section>
 
-    <section class="my-5 container-xl">
+    <section class="my-5 container-xl px-3 px-xxl-5">
       <h5 class="text-center mb-5">Manufacturers</h5>
       <div class="row g-2">
         <div class="col-4 col-sm-2 text-center">
@@ -2033,7 +2283,7 @@
       </div>
     </section>
 
-    <section class="my-5 bg-primary">
+    <section class="my-5 bg-primary px-3 px-xxl-5">
       <div class="container-xl px-3 py-5">
         <div class="row">
           <div class="col-12 col-md-8 text-white">
@@ -2066,16 +2316,16 @@
         <div class="col-12 col-md-3">
           <h5>YOUR ACCOUNT</h5>
           <ul class="list-group">
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">Personal info</a>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">Orders</a>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">My Cart</a>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">Addresses</a>
             </li>
           </ul>
@@ -2083,18 +2333,18 @@
         <div class="col-12 col-md-3">
           <h5>CUSTOMER SERVICE</h5>
           <ul class="list-group">
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted">Monday to Friday</span>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted">10am - 6.30pm (NewYork time) </span>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="tel:123 456 789">
                 +(001) 23 45 67 89</a
               >
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="mailto:abc@example.com"
                 >shopify@zemez.io</a
               >
@@ -2104,16 +2354,16 @@
         <div class="col-12 col-md-3">
           <h5>OUR GUARANTEES</h5>
           <ul class="list-group">
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted">Shipping in 3 days</span>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted">Free returns within 14 days </span>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted">Secure payments </span>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted" href="#">shopify@zemez.io</span>
             </li>
           </ul>
@@ -2121,19 +2371,19 @@
         <div class="col-12 col-md-3">
           <h5>OUR COMPANY</h5>
           <ul class="list-group">
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">Delivery</a>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">Legal Notice</a>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">About Us</a>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">Contact Us</a>
             </li>
-            <li class="list-group-item border-0 p-1 footer-item">
+            <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="#">Terms and conditions</a>
             </li>
           </ul>
@@ -2190,22 +2440,22 @@
           </button>
           <div class="modal-body p-3">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <figure class="h-100 w-100 overflow-hidden mb-0">
                   <img
                     class="h-100 w-100 obj-fit-cover"
-                    src="https://picsum.photos/600/600"
+                    src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/dewalt-dw920k-2-1-4-inch-7-2-volt-cordless-two-position-screwdriver-kit_1_377x380.png?v=1595925372"
                   />
                 </figure>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <a href="#">
                   <p class="text-muted">
                     Makita LCT200W 18-Volt Compact Lithium-Ion Cordless Combo
                     Kit 2-Piece...
                   </p>
                 </a>
-                <h2>$ 200</h2>
+                <h2>$ 200.00</h2>
                 <p>
                   <span class="text-decoration-line-through">$ 135.00</span>
                   Save 11 %
@@ -2282,7 +2532,7 @@
                     </div>
                     <div class="col-auto">
                       <button
-                        class="btn btn-outline-success border-3 rounded-0"
+                        class="btn btn-outline-success border-1 rounded-0"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -2338,5 +2588,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
 </html>

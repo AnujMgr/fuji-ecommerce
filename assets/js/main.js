@@ -5,8 +5,7 @@ $("#main-banner").owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 5000,
-  freeDrag: true,
-  pullDrag: true,
+
   touchDrag: true,
   mouseDrag: true,
   animateIn: "fadeIn", // add this
@@ -19,7 +18,7 @@ $("#main-banner").owlCarousel({
 });
 
 $("#on-sale").owlCarousel({
-  loop: false,
+  loop: true,
   dots: true,
   autoplay: true,
   margin: 10,
@@ -50,3 +49,6 @@ $(".search-box").focusout(function () {
 });
 
 $("#year").append(new Date().getFullYear());
+
+var height = $("header").height();
+$(".main-banner").css({ height: "calc(80vh - " + height + "px)" });
