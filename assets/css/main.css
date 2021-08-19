@@ -19,7 +19,9 @@ a {
   justify-content: center;
   z-index: 99;
 }
-
+.logo {
+  max-width: 200px;
+}
 /* .main-banner {
   height: calc(100vh - 400px);
 } */
@@ -59,13 +61,16 @@ a {
 
 .product-overlay-options {
   opacity: 0;
-  width: 100%;
+  width: 98%;
   bottom: -5em;
   transition: all ease-in-out 0.5s;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .card:hover .product-overlay-options {
   opacity: 1;
-  bottom: 0;
+  bottom: 1px;
 }
 .card:hover .product-overlay-items {
   opacity: 1;
@@ -230,6 +235,26 @@ input[type="radio"]:checked + label span {
   }
 }
 
+.grid-item1-h {
+  height: 100%;
+}
+
+.seperator {
+  background-color: #8dc21f;
+  height: 2px;
+  position: relative;
+  width: 70px;
+  display: block;
+  margin: 10px auto 20px;
+}
+
+.elipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
 @media (max-width: 991px) {
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
@@ -237,20 +262,38 @@ input[type="radio"]:checked + label span {
     max-height: 90vh;
     margin-top: 10px;
   }
-}
-@media (max-width: 767px) {
-  .grid-container {
-    height: auto;
-  }
   .featured-img {
-    min-height: 500px;
+    min-height: 400px;
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
   }
 }
+@media (max-width: 767px) {
+  .grid-container {
+    height: auto;
+  }
+  .card .h-12 {
+    height: 18em;
+  }
+}
 @media only screen and (max-width: 768px) {
   .main-banner .caption .display-4 {
     font-size: calc(0.8rem + 2.7vw);
+  }
+  .grid-item1-h {
+    height: 20em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card .h-20 {
+    height: 16em;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card .h-12 {
+    height: auto;
+    max-height: 15em;
   }
 }
