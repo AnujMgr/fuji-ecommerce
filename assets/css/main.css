@@ -20,7 +20,11 @@ a {
   z-index: 99;
 }
 .logo {
-  max-width: 200px;
+  max-width: 16em;
+}
+.img-flag {
+  width: 32px;
+  height: auto;
 }
 /* .main-banner {
   height: calc(100vh - 400px);
@@ -161,11 +165,6 @@ input[type="radio"]:checked + label span {
   width: 100%;
 }
 
-.has-megamenu:hover .megamenu,
-.hoverable-dropdown:hover .hoverable-dropdown-menu,
-.hoverable-dropdown:hover .cart-dropdown-menu {
-  display: block;
-}
 .hoverable-btn svg {
   fill: black;
   transition: fill 0.4s ease;
@@ -219,6 +218,12 @@ input[type="radio"]:checked + label span {
     width: 100%;
     margin-top: 0;
   }
+
+  .has-megamenu:hover .megamenu,
+  .hoverable-dropdown:hover .hoverable-dropdown-menu,
+  .hoverable-dropdown:hover .cart-dropdown-menu {
+    display: block;
+  }
 }
 /* ============ desktop view .end// ============ */
 
@@ -255,6 +260,35 @@ input[type="radio"]:checked + label span {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
+
+.owl-prev {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 60px !important;
+  margin-left: 10px;
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-next {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  font-size: 60px !important;
+  right: 10px !important;
+  top: 0%;
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-prev:hover,
+.owl-next {
+  background: #0000 !important;
+}
+
 @media (max-width: 991px) {
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
@@ -267,6 +301,15 @@ input[type="radio"]:checked + label span {
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
+  }
+  .megamenu {
+    background: #0e0e0e00;
+  }
+  .megamenu li {
+    background: #0e0e0e00;
+  }
+  .megamenu li a {
+    color: #fff !important;
   }
 }
 @media (max-width: 767px) {

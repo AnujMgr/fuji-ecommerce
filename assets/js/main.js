@@ -24,14 +24,18 @@ $(".on-sale-carousel").owlCarousel({
   autoplayTimeout: 9000,
   animateIn: "fadeIn", // add this
   animateOut: "fadeOut", // and this
+
   responsive: {
     0: {
       items: 1,
     },
-    600: {
+    576: {
+      items: 2,
+    },
+    768: {
       items: 3,
     },
-    1000: {
+    992: {
       items: 5,
       autoplay: false,
       loop: false,
@@ -42,6 +46,7 @@ $(".on-sale-carousel").owlCarousel({
 $(".icons-menu-carousel").owlCarousel({
   loop: true,
   dots: true,
+  nav: true,
   autoplay: true,
   margin: 10,
   autoplayTimeout: 10000,
@@ -51,13 +56,17 @@ $(".icons-menu-carousel").owlCarousel({
     0: {
       items: 1,
     },
-    600: {
+    576: {
+      items: 2,
+    },
+    768: {
       items: 3,
     },
-    1000: {
+    992: {
       items: 5,
       autoplay: false,
       loop: false,
+      dots: false,
     },
   },
 });
@@ -65,6 +74,7 @@ $(".icons-menu-carousel").owlCarousel({
 $(".manufacturers-carousel").owlCarousel({
   loop: true,
   dots: true,
+  nav: true,
   autoplay: true,
   margin: 10,
   autoplayTimeout: 11000,
@@ -74,10 +84,10 @@ $(".manufacturers-carousel").owlCarousel({
     0: {
       items: 3,
     },
-    600: {
+    768: {
       items: 4,
     },
-    1000: {
+    992: {
       items: 6,
       autoplay: false,
       loop: false,

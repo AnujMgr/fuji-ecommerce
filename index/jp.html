@@ -31,12 +31,12 @@
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          Lang
+          <img class="img-flag" src="../assets/img/japan.png" />
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li>
             <a class="dropdown-item d-flex justify-content-between" href="#"
-              >Japan<img src="../assets/img/japan.png"
+              >Japan<img class="img-flag" src="../assets/img/japan.png"
             /></a>
           </li>
           <li>
@@ -148,7 +148,15 @@
               <a class="nav-link" href="#">ホームページ</a>
             </li>
             <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link" href="#">カテゴリー</a>
+              <a
+                class="nav-link"
+                href="#"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >カテゴリー</a
+              >
               <div
                 class="dropdown-menu megamenu rounded-0 border-0"
                 role="menu"
@@ -549,7 +557,7 @@
     <!-- Icons Menu Section -->
     <section class="bg-primary">
       <div class="container-xl text-white py-5 px-3 px-xxl-5">
-        <div class="owl-carousel owl-theme icons-menu-carousel">
+        <div class="owl-carousel owl-theme icons-menu-carousel px-4 px-lg-0">
           <div class="item text-center">
             <a href="#">
               <svg
@@ -693,7 +701,7 @@
                     bottom-0
                     p-4
                     text-white
-                    col-6
+                    col-12 col-md-6
                     z-index-1
                   "
                 >
@@ -713,7 +721,7 @@
                     bottom-0
                     p-4
                     text-white
-                    col-6
+                    col-12 col-md-6
                     z-index-1
                   "
                 >
@@ -736,7 +744,7 @@
                   bottom-0
                   p-4
                   text-white
-                  col-6
+                  col-12 col-md-6
                   z-index-1
                 "
               >
@@ -758,7 +766,7 @@
       </div>
       <div class="row g-3">
         <!-- Unavailable Product -->
-        <div class="col-6 col-sm-6 col-md-3">
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -828,7 +836,7 @@
           </div>
         </div>
         <!-- Product with Add to Cart Option-->
-        <div class="col-6 col-sm-6 col-md-3">
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -898,7 +906,7 @@
           </div>
         </div>
         <!-- Product with Variation -->
-        <div class="col-6 col-sm-6 col-md-3">
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -982,7 +990,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-sm-6 col-md-3">
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
           <div class="card rounded-0 border-0">
             <div class="position-relative overflow-hidden">
               <a href="#">
@@ -1153,8 +1161,8 @@
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-8 mt-3 mt-md-0">
-          <div class="row">
-            <div class="col-6 col-sm-6 col-md-3">
+          <div class="row g-4">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1225,7 +1233,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1296,7 +1304,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1367,7 +1375,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1438,7 +1446,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1509,7 +1517,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1580,7 +1588,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1651,7 +1659,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
               <div class="card rounded-0 border-0">
                 <div class="position-relative">
                   <a href="#">
@@ -1733,409 +1741,294 @@
         <h4 class="text-center">発売中</h4>
         <span class="seperator"></span>
       </div>
-      <div class="row">
-        <div class="owl-carousel owl-theme on-sale-carousel">
-          <div class="item">
-            <div class="card rounded-0 border-0">
-              <div class="position-relative overflow-hidden">
-                <a href="#">
-                  <figure
-                    class="
-                      h-16
-                      border border-secondary
-                      mb-0
-                      d-flex
-                      align-items-center
-                      p-1
-                    "
-                  >
-                    <img
-                      class="w-100 obj-fit-cover"
-                      src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/wen-61720-3-4-inch-to-2-inch-18-gauge-brad-nailer_1_346x346_crop_top.png?v=1595925507"
-                      alt="Card image cap"
-                    />
-                  </figure>
-                </a>
-
-                <div class="product-overlay-items opacity-100">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-block d-lg-none
-                    "
-                    onclick='alert("I am an alert box!")'
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-overlay-items d-none d-lg-block">
-                  <button
-                    class="btn bg-primary text-white rounded-0 btn-variant"
-                    data-bs-toggle="modal"
-                    data-bs-target="#variantModal"
-                  >
-                    バリアントを選択します
-                  </button>
-                </div>
-                <div
+      <div class="row g-4">
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
+          <div class="card rounded-0 border-0">
+            <div class="position-relative overflow-hidden">
+              <a href="#">
+                <figure
                   class="
-                    product-overlay-options
-                    position-absolute
-                    bg-white
-                    p-2
-                    py-3
-                    d-none d-lg-flex
-                    gap-2
+                    h-16
+                    border border-secondary
+                    mb-0
+                    d-flex
+                    align-items-center
+                    p-1
                   "
                 >
-                  <div
-                    class="color-swatch rounded-2 elevate-1"
-                    style="background-color: red"
-                  ></div>
-                  <div
-                    class="color-swatch rounded-2 elevate-1"
-                    style="background-color: blue"
-                  ></div>
-                </div>
-              </div>
-              <div class="">
-                <a href="#">
-                  <p class="mb-1 text-muted elipsis-2">
-                    建材のトレンドの変化で水性防蟻剤の需要が高まっています。
-                  </p>
-                </a>
-                <div>
-                  <span class="fw-bold"> ¥ 74.00 </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card rounded-0 border-0">
-              <div class="position-relative overflow-hidden">
-                <a href="#">
-                  <figure
-                    class="
-                      h-16
-                      border border-secondary
-                      mb-0
-                      d-flex
-                      align-items-center
-                      p-1
-                    "
-                  >
-                    <img
-                      class="w-100 obj-fit-cover"
-                      src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/shop-fox-w1713-16-inch-variable-speed-scroll-saw_1_346x346_crop_top.png?v=1595925490"
-                      alt="Card image cap"
-                    />
-                  </figure>
-                </a>
+                  <img
+                    class="w-100 obj-fit-cover"
+                    src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/wen-61720-3-4-inch-to-2-inch-18-gauge-brad-nailer_1_346x346_crop_top.png?v=1595925507"
+                    alt="Card image cap"
+                  />
+                </figure>
+              </a>
 
-                <div class="product-overlay-items opacity-100">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-block d-lg-none
-                    "
-                    onclick='alert("I am an alert box!")'
+              <div class="product-overlay-items opacity-100">
+                <button
+                  class="btn bg-warning text-white rounded-0 d-block d-lg-none"
+                  onclick='alert("I am an alert box!")'
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bag"
+                    viewBox="0 0 16 16"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-overlay-items">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-none d-lg-block
-                      btn-add-to-cart btn-variant
-                    "
-                    onclick='alert("I am an alert box!")'
-                  >
-                    カートに追加
-                  </button>
-                </div>
+                    <path
+                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                    />
+                  </svg>
+                </button>
               </div>
-              <div class="">
-                <a href="#">
-                  <p class="mb-1 text-muted elipsis-2">
-                    建材のトレンドの変化で水性防蟻剤の需要が高まっています。
-                  </p>
-                </a>
-                <div>
-                  <span class="fw-bold"> ¥ 74.00 </span>
-                </div>
+              <div class="product-overlay-items d-none d-lg-block">
+                <button
+                  class="btn bg-primary text-white rounded-0 btn-variant"
+                  data-bs-toggle="modal"
+                  data-bs-target="#variantModal"
+                >
+                  バリアントを選択します
+                </button>
+              </div>
+              <div
+                class="
+                  product-overlay-options
+                  position-absolute
+                  bg-white
+                  p-2
+                  py-3
+                  d-none d-lg-flex
+                  gap-2
+                "
+              >
+                <div
+                  class="color-swatch rounded-2 elevate-1"
+                  style="background-color: red"
+                ></div>
+                <div
+                  class="color-swatch rounded-2 elevate-1"
+                  style="background-color: blue"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <a href="#">
+                <p class="mb-1 text-muted elipsis-2">
+                  建材のトレンドの変化で水性防蟻剤の需要が高まっています。
+                </p>
+              </a>
+              <div>
+                <span class="fw-bold"> ¥ 74.00 </span>
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="card rounded-0 border-0">
-              <div class="position-relative overflow-hidden">
-                <a href="#">
-                  <figure
-                    class="
-                      h-16
-                      border border-secondary
-                      mb-0
-                      d-flex
-                      align-items-center
-                      p-1
-                    "
-                  >
-                    <img
-                      class="w-100 obj-fit-cover"
-                      src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/porter-cable-pin138-23-gauge-1-3-8-inch-pin-nailer_1_346x346_crop_top.png?v=1595925449"
-                      alt="Card image cap"
-                    />
-                  </figure>
-                </a>
-                
-                <div class="product-overlay-items opacity-100">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-block d-lg-none
-                    "
-                    onclick='alert("I am an alert box!")'
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-overlay-items d-none d-lg-block">
-                  <button
-                    class="btn bg-primary text-white rounded-0 btn-variant"
-                    data-bs-toggle="modal"
-                    data-bs-target="#variantModal"
-                  >
-                    バリアントを選択します
-                  </button>
-                </div>
-                <div
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
+          <div class="card rounded-0 border-0">
+            <div class="position-relative overflow-hidden">
+              <a href="#">
+                <figure
                   class="
-                    product-overlay-options
-                    input-variation
-                    position-absolute
-                    bg-white
-                    p-2
-                    py-3
-                    d-none d-lg-flex
-                    gap-2
+                    h-16
+                    border border-secondary
+                    mb-0
+                    d-flex
+                    align-items-center
+                    p-1
                   "
                 >
-                  <div
-                    class="color-swatch rounded-2 elevate-1"
-                    style="background-color: red"
-                  ></div>
-                  <div
-                    class="color-swatch rounded-2 elevate-1"
-                    style="background-color: blue"
-                  ></div>
-                </div>
+                  <img
+                    class="w-100 obj-fit-cover"
+                    src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/shop-fox-w1713-16-inch-variable-speed-scroll-saw_1_346x346_crop_top.png?v=1595925490"
+                    alt="Card image cap"
+                  />
+                </figure>
+              </a>
+
+              <div class="product-overlay-items opacity-100">
+                <button
+                  class="btn bg-warning text-white rounded-0 d-block d-lg-none"
+                  onclick='alert("I am an alert box!")'
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bag"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                    />
+                  </svg>
+                </button>
               </div>
-              <div class="">
-                <a href="#">
-                  <p class="mb-1 text-muted elipsis-2">
-                    建材のトレンドの変化で水性防蟻剤の需要が高まっています。
-                  </p>
-                </a>
-                <div>
-                  <span class="fw-bold"> ¥ 74.00 </span>
-                </div>
+              <div class="product-overlay-items">
+                <button
+                  class="
+                    btn
+                    bg-warning
+                    text-white
+                    rounded-0
+                    d-none d-lg-block
+                    btn-add-to-cart btn-variant
+                  "
+                  onclick='alert("I am an alert box!")'
+                >
+                  カートに追加
+                </button>
+              </div>
+            </div>
+            <div class="">
+              <a href="#">
+                <p class="mb-1 text-muted elipsis-2">
+                  建材のトレンドの変化で水性防蟻剤の需要が高まっています。
+                </p>
+              </a>
+              <div>
+                <span class="fw-bold"> ¥ 74.00 </span>
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="card rounded-0 border-0">
-              <div class="position-relative overflow-hidden">
-                <a href="#">
-                  <figure
-                    class="
-                      h-16
-                      border border-secondary
-                      mb-0
-                      d-flex
-                      align-items-center
-                      p-1
-                    "
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
+          <div class="card rounded-0 border-0">
+            <div class="position-relative overflow-hidden">
+              <a href="#">
+                <figure
+                  class="
+                    h-16
+                    border border-secondary
+                    mb-0
+                    d-flex
+                    align-items-center
+                    p-1
+                  "
+                >
+                  <img
+                    class="w-100 obj-fit-cover"
+                    src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/porter-cable-892-2-1-4-horsepower-router_1_346x346_crop_top.png?v=1595925434"
+                    alt="Card image cap"
+                  />
+                </figure>
+              </a>
+
+              <div class="product-overlay-items opacity-100">
+                <button
+                  class="btn bg-warning text-white rounded-0 d-block d-lg-none"
+                  onclick='alert("I am an alert box!")'
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bag"
+                    viewBox="0 0 16 16"
                   >
-                    <img
-                      class="w-100 obj-fit-cover"
-                      src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/porter-cable-892-2-1-4-horsepower-router_1_346x346_crop_top.png?v=1595925434"
-                      alt="Card image cap"
+                    <path
+                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
                     />
-                  </figure>
-                </a>
-                
-                <div class="product-overlay-items opacity-100">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-block d-lg-none
-                    "
-                    onclick='alert("I am an alert box!")'
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-overlay-items">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-none d-lg-block
-                      btn-add-to-cart btn-variant
-                    "
-                    onclick='alert("I am an alert box!")'
-                  >
-                    カートに追加
-                  </button>
-                </div>
+                  </svg>
+                </button>
               </div>
-              <div class="">
-                <a href="#">
-                  <p class="mb-1 text-muted elipsis-2">
-                    建材のトレンドの変化で水性防蟻剤の需要が高まっています。
-                  </p>
-                </a>
-                <div>
-                  <span class="fw-bold"> ¥ 74.00 </span>
-                </div>
+              <div class="product-overlay-items">
+                <button
+                  class="
+                    btn
+                    bg-warning
+                    text-white
+                    rounded-0
+                    d-none d-lg-block
+                    btn-add-to-cart btn-variant
+                  "
+                  onclick='alert("I am an alert box!")'
+                >
+                  カートに追加
+                </button>
+              </div>
+            </div>
+            <div class="">
+              <a href="#">
+                <p class="mb-1 text-muted elipsis-2">
+                  建材のトレンドの変化で水性防蟻剤の需要が高まっています。
+                </p>
+              </a>
+              <div>
+                <span class="fw-bold"> ¥ 74.00 </span>
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="card rounded-0 border-0">
-              <div class="position-relative overflow-hidden">
-                <a href="#">
-                  <figure
-                    class="
-                      h-16
-                      border border-secondary
-                      mb-0
-                      d-flex
-                      align-items-center
-                      p-1
-                    "
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 mb-3 mb-lg-0">
+          <div class="card rounded-0 border-0">
+            <div class="position-relative overflow-hidden">
+              <a href="#">
+                <figure
+                  class="
+                    h-16
+                    border border-secondary
+                    mb-0
+                    d-flex
+                    align-items-center
+                    p-1
+                  "
+                >
+                  <img
+                    class="w-100 obj-fit-cover"
+                    src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/makita-lxt601-18-volt-lxt-6-piece-lithium-ion-cordless-combo-kit_1_346x346_crop_top.png?v=1595925419"
+                    alt="Card image cap"
+                  />
+                </figure>
+              </a>
+
+              <div class="product-overlay-items opacity-100">
+                <button
+                  class="btn bg-warning text-white rounded-0 d-block d-lg-none"
+                  onclick='alert("I am an alert box!")'
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bag"
+                    viewBox="0 0 16 16"
                   >
-                    <img
-                      class="w-100 obj-fit-cover"
-                      src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/makita-lxt601-18-volt-lxt-6-piece-lithium-ion-cordless-combo-kit_1_346x346_crop_top.png?v=1595925419"
-                      alt="Card image cap"
+                    <path
+                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
                     />
-                  </figure>
-                </a>
-                
-                <div class="product-overlay-items opacity-100">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-block d-lg-none
-                    "
-                    onclick='alert("I am an alert box!")'
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-overlay-items">
-                  <button
-                    class="
-                      btn
-                      bg-warning
-                      text-white
-                      rounded-0
-                      d-none d-lg-block
-                      btn-add-to-cart btn-variant
-                    "
-                    onclick='alert("I am an alert box!")'
-                  >
-                    カートに追加
-                  </button>
-                </div>
+                  </svg>
+                </button>
               </div>
-              <div class="">
-                <a href="#">
-                  <p class="mb-1 text-muted elipsis-2">
-                    建材のトレンドの変化で水性防蟻剤の需要が高まっています。
-                  </p>
-                </a>
-                <div>
-                  <span class="fw-bold"> ¥ 74.00 </span>
-                </div>
+              <div class="product-overlay-items">
+                <button
+                  class="
+                    btn
+                    bg-warning
+                    text-white
+                    rounded-0
+                    d-none d-lg-block
+                    btn-add-to-cart btn-variant
+                  "
+                  onclick='alert("I am an alert box!")'
+                >
+                  カートに追加
+                </button>
+              </div>
+            </div>
+            <div class="">
+              <a href="#">
+                <p class="mb-1 text-muted elipsis-2">
+                  建材のトレンドの変化で水性防蟻剤の需要が高まっています。
+                </p>
+              </a>
+              <div>
+                <span class="fw-bold"> ¥ 74.00 </span>
               </div>
             </div>
           </div>
@@ -2149,7 +2042,7 @@
         <span class="seperator"></span>
       </div>
       <div class="row g-2">
-        <div class="owl-carousel manufacturers-carousel">
+        <div class="owl-carousel manufacturers-carousel px-4 px-lg-0 owl-theme">
           <div class="item">
             <div class="text-center">
               <img
@@ -2225,11 +2118,11 @@
           <h5>顧客サービス</h5>
           <ul class="list-group">
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <span class="text-muted">月曜日から金曜日</span>
+              <span class="text-muted">Phone 0263-98-3280</span>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted"
-                >午前10時〜午後6時30分（ニューヨーク時間）
+                >Hours - Weekdays 9:00 am to 5:30 pm
               </span>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
