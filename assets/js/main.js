@@ -95,7 +95,7 @@ $(".search-box").focusout(function () {
   $(".suggestion-box").removeClass("d-block");
 });
 
-$("#year").append(new Date().getFullYear());
+$(".year").append(new Date().getFullYear());
 
 var height = $("header").height();
 $(".main-banner").css({ height: "calc(80vh - " + height + "px)" });
