@@ -198,6 +198,9 @@ input[type="radio"]:checked + label span {
 .h-22 {
   height: 22em;
 }
+.mx-h-25 {
+  max-height: 25em;
+}
 .grid-container {
   height: 650px;
 }
@@ -260,6 +263,10 @@ input[type="radio"]:checked + label span {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
+.thumbnail-carousel-slider .owl-prev,
+.thumbnail-carousel-slider .owl-next {
+  top: 40%;
+}
 
 .owl-prev {
   width: 15px;
@@ -287,6 +294,12 @@ input[type="radio"]:checked + label span {
 .owl-prev:hover,
 .owl-next {
   background: #0000 !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+#sync2 .synced .item {
+  border: 2px solid #493eff;
 }
 
 @media (max-width: 991px) {
