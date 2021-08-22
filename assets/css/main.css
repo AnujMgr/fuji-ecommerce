@@ -210,39 +210,6 @@ input[type="radio"]:checked + label span {
   height: 1.5rem;
 }
 
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-  .navbar .has-megamenu {
-    position: static !important;
-  }
-  .navbar .megamenu {
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .has-megamenu:hover .megamenu,
-  .hoverable-dropdown:hover .hoverable-dropdown-menu,
-  .hoverable-dropdown:hover .cart-dropdown-menu {
-    display: block;
-  }
-}
-/* ============ desktop view .end// ============ */
-
-/* ============ mobile view ============ */
-
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1500px;
-  }
-}
-
 .grid-item1-h {
   height: 100%;
 }
@@ -266,6 +233,12 @@ input[type="radio"]:checked + label span {
 .thumbnail-carousel-slider .owl-prev,
 .thumbnail-carousel-slider .owl-next {
   top: 40%;
+}
+.thumbnail-carousel-slider .item {
+  max-height: 27em;
+}
+.carousel-thumbs .item {
+  max-height: 5em;
 }
 
 .owl-prev {
@@ -302,6 +275,39 @@ input[type="radio"]:checked + label span {
   border: 2px solid #493eff;
 }
 
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .has-megamenu:hover .megamenu,
+  .hoverable-dropdown:hover .hoverable-dropdown-menu,
+  .hoverable-dropdown:hover .cart-dropdown-menu {
+    display: block;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
@@ -332,18 +338,22 @@ input[type="radio"]:checked + label span {
   .card .h-12 {
     height: 18em;
   }
-}
-@media only screen and (max-width: 768px) {
   .main-banner .caption .display-4 {
     font-size: calc(0.8rem + 2.7vw);
   }
   .grid-item1-h {
     height: 20em;
   }
-}
-@media only screen and (max-width: 600px) {
-  .card .h-20 {
+  .card .h-20,
+  .card .h-16 {
     height: 16em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card .h-20,
+  .card .h-16 {
+    height: 14em;
   }
 }
 
@@ -351,5 +361,9 @@ input[type="radio"]:checked + label span {
   .card .h-12 {
     height: auto;
     max-height: 15em;
+  }
+  .card .h-20,
+  .card .h-16 {
+    height: 10em;
   }
 }

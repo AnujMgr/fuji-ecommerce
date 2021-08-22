@@ -100,8 +100,8 @@ var slides = sync1
     autoplayHoverPause: false,
     nav: true,
     dots: false,
-    touchDrag: false,
-    mouseDrag: false,
+    touchDrag: true,
+    mouseDrag: true,
   })
   .on("changed.owl.carousel", syncPosition);
 
@@ -140,7 +140,7 @@ function syncPosition(el) {
 var thumbs = sync2
   .owlCarousel({
     startPosition: 12,
-    items: 4,
+    items: 6,
     loop: false,
     margin: 10,
     autoplay: false,
