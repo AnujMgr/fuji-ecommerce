@@ -31,18 +31,18 @@
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <img class="img-flag" src="../assets/img/uk.png" />
+          <img class="img-flag" src="../assets/img/japan.png" />
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li>
-            <a
-              class="dropdown-item d-flex justify-content-between"
-              href="./login-page-jp.html"
+            <a class="dropdown-item d-flex justify-content-between" href="#"
               >Japan<img class="img-flag" src="../assets/img/japan.png"
             /></a>
           </li>
           <li>
-            <a class="dropdown-item d-flex justify-content-between" href="#"
+            <a
+              class="dropdown-item d-flex justify-content-between"
+              href="./login-page.html"
               >English <img class="img-flag" src="../assets//img/uk.png"
             /></a>
           </li>
@@ -62,7 +62,6 @@
         position-sticky
         top-0
         z-index-2
-        p-lg-0
       "
     >
       <div class="container-xl px-3 px-xxl-5">
@@ -86,6 +85,7 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
+            <span class="me-2">検索</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -138,14 +138,14 @@
           >
             <a class="navbar-brand" href="#">
               <div class="">
-                <img class="img-fluid logo" src="../assets/img/logo.png" />
                 <h6 class="mb-0">FUJI B2B STORE</h6>
+                <img class="img-fluid logo" src="../assets/img/logo.png" />
               </div>
             </a>
           </div>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="#">ホームページ</a>
             </li>
             <li class="nav-item dropdown has-megamenu">
               <a
@@ -155,14 +155,13 @@
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                >カテゴリー</a
               >
-                CATEGORIES
-              </a>
               <div
                 class="dropdown-menu megamenu rounded-0 border-0"
                 role="menu"
               >
-                <div class="container-xl py-lg-3">
+                <div class="container-xl py-3">
                   <div class="row">
                     <ul class="list-group col-md-3">
                       <li
@@ -174,27 +173,27 @@
                           bg-transparent
                         "
                       >
-                        <a class="text-muted" href="#">Paints</a>
+                        <a class="text-muted" href="#">ペイント</a>
                       </li>
                       <li class="list-group-item border-0 p-1 hoverable-item">
-                        <a class="text-muted" href="#">Tape</a>
+                        <a class="text-muted" href="#">テープ</a>
                       </li>
                       <li class="list-group-item border-0 p-1 hoverable-item">
-                        <a class="text-muted" href="#">Building Materials</a>
+                        <a class="text-muted" href="#">建材</a>
                       </li>
                       <li class="list-group-item border-0 p-1 hoverable-item">
-                        <a class="text-muted" href="#">Adhesives</a>
+                        <a class="text-muted" href="#">接着剤</a>
                       </li>
                     </ul>
                     <ul class="list-group col-md-3">
                       <li class="list-group-item border-0 p-1 hoverable-item">
-                        <a class="text-muted" href="#">Work Tools</a>
+                        <a class="text-muted" href="#">作業ツール</a>
                       </li>
                       <li class="list-group-item border-0 p-1 hoverable-item">
-                        <a class="text-muted" href="#">Cleaning</a>
+                        <a class="text-muted" href="#">クリーニング</a>
                       </li>
                       <li class="list-group-item border-0 p-1 hoverable-item">
-                        <a class="text-muted" href="#">Plastic Materials</a>
+                        <a class="text-muted" href="#">プラスチック材料</a>
                       </li>
                     </ul>
                     <div class="col-md-4 d-none d-lg-block">
@@ -226,7 +225,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" href="#">問い合わせ</a>
             </li>
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex">
@@ -237,7 +236,7 @@
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
-                <span class="me-2"> Search Here </span>
+                <span class="me-2">検索</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -433,61 +432,6 @@
       </div>
     </nav>
 
-    <section class="my-4 container-xl px-4 px-lg-3 px-xxl-5">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a class="text-dark" href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item active">
-            <a class="text-dark" href="#">Login</a>
-          </li>
-        </ol>
-      </nav>
-    </section>
-
-    <section class="my-4 container-xl px-4 px-lg-3 px-xxl-5 pb-5">
-      <h4 class="text-center">Login</h4>
-
-      <div class="col-md-6 mx-auto my-5">
-        <form>
-          <div class="mb-3">
-            <label for="inputEmail" class="form-label fw-bold"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control rounded-0"
-              id="inputEmail"
-              name="email"
-              placeholder="Enter your Email Address"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="inputPassword" class="form-label fw-bold"
-              >Password</label
-            >
-            <input
-              type="password"
-              class="form-control rounded-0"
-              id="inputPassword"
-              name="password"
-              placeholder="Enter your Password"
-            />
-          </div>
-
-          <div class="d-flex justify-content-between">
-            <button type="submit" class="btn btn-success rounded-0 px-3">
-              Submit
-            </button>
-            <a href="#" class="text-success" title="Reset your password"
-              >RESET PASSWORD</a
-            >
-          </div>
-        </form>
-      </div>
-    </section>
-
     <!-- Search Option -->
     <div
       class="modal fade"
@@ -558,30 +502,86 @@
         </div>
       </div>
     </div>
+
+    <section class="my-4 container-xl px-4 px-lg-3 px-xxl-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="text-dark" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active">
+            <a class="text-dark" href="#">Login</a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+
+    <section class="my-4 container-xl px-4 px-lg-3 px-xxl-5 pb-5">
+      <h4 class="text-center">Login</h4>
+
+      <div class="col-md-6 mx-auto my-5">
+        <form>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label fw-bold"
+              >メールアドレス
+            </label>
+            <input
+              type="email"
+              class="form-control rounded-0"
+              id="inputEmail"
+              name="email"
+              placeholder="例 :  info@jpal.co.jp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="form-label fw-bold"
+              >パスワードを作成
+            </label>
+            <input
+              type="password"
+              class="form-control rounded-0"
+              id="inputPassword"
+              name="password"
+              placeholder="パスワードを入力してください"
+            />
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-success rounded-0 px-3">
+              申し込みする
+            </button>
+            <a href="#" class="text-success" title="Reset your password"
+              >パスワードを再設定する</a
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
     <footer class="container-xl px-4 mb-4">
       <div class="row">
         <div class="col-12 col-md-4">
-          <h5>YOUR ACCOUNT</h5>
+          <h5>あなたのアカウント</h5>
           <ul class="list-group">
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">Personal info</a>
+              <a class="text-muted" href="#">個人情報</a>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">Orders</a>
+              <a class="text-muted" href="#">注文</a>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">My Cart</a>
+              <a class="text-muted" href="#">私のカート</a>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">Addresses</a>
+              <a class="text-muted" href="#">住所</a>
             </li>
           </ul>
         </div>
         <div class="col-12 col-md-4">
-          <h5>CUSTOMER SERVICE</h5>
+          <h5>顧客サービス</h5>
           <ul class="list-group">
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <span class="text-muted">Monday to Friday</span>
+              <span class="text-muted">Phone 0263-98-3280</span>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
               <span class="text-muted"
@@ -590,34 +590,34 @@
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="tel:123 456 789">
-                Phone 0263-98-3280</a
+                +(001) 23 45 67 89</a
               >
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
               <a class="text-muted" href="mailto:abc@example.com">
-                info@muncha.com
-              </a>
+                info@muncha.com</a
+              >
             </li>
           </ul>
         </div>
 
         <div class="col-12 col-md-4">
-          <h5>OUR COMPANY</h5>
+          <h5>当社</h5>
           <ul class="list-group">
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">Delivery</a>
+              <a class="text-muted" href="#">配達</a>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">Legal Notice</a>
+              <a class="text-muted" href="#">法的通知</a>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">About Us</a>
+              <a class="text-muted" href="#">私たちに関しては</a>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">Contact Us</a>
+              <a class="text-muted" href="#">お問い合わせ</a>
             </li>
             <li class="list-group-item border-0 p-1 hoverable-item">
-              <a class="text-muted" href="#">Terms and conditions</a>
+              <a class="text-muted" href="#">規約と条件</a>
             </li>
           </ul>
         </div>
