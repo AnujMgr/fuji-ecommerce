@@ -482,30 +482,54 @@
               />
             </div>
 
-            <div class="col-md-6 mb-2">
-              <label for="postalCode" class="form-label">郵便番号 </label>
+           <div class="col-md-6 mb-2">
+              <label for="address" class="form-label">それ以降の住所 </label>
               <input
-                type="number"
+                type="text"
                 class="form-control rounded-0"
-                id="postalCode"
-                name="postalCode"
-                pattern=""
-                placeholder="郵便番号を記入してください"
+                id="address"
+                name="address"
+                placeholder="" 
               />
+                <small id="address" class="form-text text-muted">(例) 松本1-1-1</small><br>
+                <small id="address" class="form-text text-muted">(例）松本2-2-2 ocビル301</small><br>
+                <small id="address" class="form-text text-muted">※マンション.アパート名は必ず入力してください。</small>
+            </div>
+
+            <div class="col-md-12 mb-2">
+              <label for="postalCode" class="form-label">郵便番号 </label>
+              <div class="row">
+                <div class="col-3">
+                  <input
+                    type="number"
+                    class="form-control rounded-0"
+                    id="postalCode"
+                    name="postalCode"
+                    max="999"
+                    min="0"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="number"
+                    class="form-control rounded-0"
+                    id="postalCode2"
+                    name="postalCode"
+                    max="9999"
+                    min="0"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <small id="address" class="form-text text-muted">半角数字で入力してください</small><br>
+              </div>
             </div>
 
             <div class="col-md-6 mb-2">
               <label for="prefectures" class="form-label">都道府県 </label>
-              <select
-                class="form-select"
-                aria-label="Select Prefectures"
-                name="prefectures"
-              >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+              <input id="prefectures" type="text" name="prefectures" class="form-control rounded-0" disabled/>
             </div>
 
             <div class="col-md-6 mb-2">
@@ -517,43 +541,10 @@
                 name="municipality"
               />
             </div>
-            <div class="col-md-6 mb-2">
-              <label for="address" class="form-label">それ以降の住所 </label>
-              <input
-                type="text"
-                class="form-control rounded-0"
-                id="address"
-                name="address"
-                placeholder=""
-              />
-            </div>
+
+            
           </div>
 
-          <div class="row g-3">
-            <h6 class="mt-5 text-center fw-bold">パスワード</h6>
-            <div class="col-md-6 mb-2">
-              <label for="password" class="form-label">パスワードを作成 </label>
-              <input
-                type="password"
-                class="form-control rounded-0"
-                id="password"
-                name="password"
-                placeholder="パスワードを入力してください"
-              />
-            </div>
-            <div class="col-md-6 mb-2">
-              <label for="rePassword" class="form-label"
-                >パスワードを再入力
-              </label>
-              <input
-                type="password"
-                class="form-control rounded-0"
-                id="rePassword"
-                name="rePassword"
-                placeholder="パスワードを再入力してください"
-              />
-            </div>
-          </div>
           <div class="row g-3">
             <h6 class="mt-5 text-center fw-bold">アカウント担当者向け</h6>
             <div class="col-md-6 mb-2">
@@ -583,7 +574,17 @@
                 class="form-control rounded-0"
                 id="surname2"
                 name="surname2"
-                placeholder=":ヤマダ"
+                placeholder="例: ヤマダ"
+              />
+            </div>
+             <div class="col-md-6 mb-2">
+              <label for="name2" class="form-label">名 </label>
+              <input
+                type="text"
+                class="form-control rounded-0"
+                id="name2"
+                name="name2"
+                placeholder="例: 太郎"
               />
             </div>
             <div class="col-md-6 mb-2">
@@ -620,6 +621,32 @@
                 id="representativeEmail"
                 name="representativeEmail"
                 placeholder=""
+              />
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <h6 class="mt-5 text-center fw-bold">パスワード</h6>
+            <div class="col-md-6 mb-2">
+              <label for="password" class="form-label">パスワードを作成 </label>
+              <input
+                type="password"
+                class="form-control rounded-0"
+                id="password"
+                name="password"
+                placeholder="パスワードを入力してください"
+              />
+            </div>
+            <div class="col-md-6 mb-2">
+              <label for="rePassword" class="form-label"
+                >パスワードを再入力
+              </label>
+              <input
+                type="password"
+                class="form-control rounded-0"
+                id="rePassword"
+                name="rePassword"
+                placeholder="パスワードを再入力してください"
               />
             </div>
           </div>
@@ -703,13 +730,13 @@
   <section class="bg-dark">
     <div class="container-xl text-white py-2">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8 col-xxl-7">
           <p class="mb-0 text-md-end">
             © <span class="year"></span>. Fuji Corporation LTD. All Rights
             Reserved.
           </p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xxl-5">
           <p class="mb-0 text-sm-end">
             <a class="text-white" href="https://jpal.co.jp/new"
               >Powered by JPAL</a
@@ -732,8 +759,8 @@
     <div class="modal-dialog mt-0 mw-100 m-0" role="document">
       <div class="modal-content rounded-0">
         <div class="modal-body">
-          <div class="col-11 col-sm-8 col-md-8 col-lg-5 mx-auto">
-            <form class="row g-3 align-items-end">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-5 mx-auto">
+            <form class="row g-1 g-sm-3 align-items-end">
               <div class="col-4 col-sm-3 mb-3">
                 <select
                   class="form-select btn btn-dark text-white rounded-0 myselect"
@@ -955,5 +982,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="../assets/js/script-min.js"></script>
+  <script src="../assets/js/main.js"></script>
 </html>

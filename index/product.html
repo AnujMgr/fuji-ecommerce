@@ -499,10 +499,13 @@
       <h3 class="fw-normal">Shop Fox W1312 16-inch Variable Speed</h3>
       <div class="my-3">
         <h3 class="me-2 mb-0">
-          ¥ 89.00 <span class="me-2 h6 text-success">(after tax ¥ 100)</span>
+          ¥ 89.00
+          <span class="me-2 text-decoration-line-through text-success"
+            >¥ 99.00</span
+          >
         </h3>
-        <span class="text-decoration-line-through text-success h6">¥ 99.00</span
-        ><span class="text-success h6"> (10 %)</span>
+        <span class="text-success h6"></span
+        ><span class="text-success h6">Tax 10%. (After tax ¥100)</span>
       </div>
 
       <div class="mb-3">
@@ -525,12 +528,29 @@
         <span class="text-dark fw-bold">Tags: </span>
         <span class="text-muted">Abrasives, Accessories, Specials </span>
       </div>
+      <div class="mb-3">
+        <button class="btn btn-outline-success rounded-0 px-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-heart me-2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+            />
+          </svg>
+          Add to Favourite
+        </button>
+      </div>
 
       <div class="row">
         <div class="col-4 col-sm-3">
           <label for="quantity" class="form-label fw-bold">Quantity</label>
           <input
-            class="form-control"
+            class="form-control rounded-0"
             type="number"
             value="1"
             id="quantity"
@@ -538,7 +558,15 @@
           />
         </div>
         <div class="col-8 col-sm-auto d-flex align-items-end">
-          <button class="btn btn-dark px-3 px-sm-5 d-flex align-items-center">
+          <button
+            class="
+              btn btn-dark
+              px-3 px-sm-5
+              d-flex
+              align-items-center
+              rounded-0
+            "
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -960,13 +988,13 @@
   <section class="bg-dark">
     <div class="container-xl text-white py-2">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8 col-xxl-7">
           <p class="mb-0 text-md-end">
             © <span class="year"></span>. Fuji Corporation LTD. All Rights
             Reserved.
           </p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xxl-5">
           <p class="mb-0 text-sm-end">
             <a class="text-white" href="https://jpal.co.jp/new"
               >Powered by JPAL</a
@@ -989,8 +1017,8 @@
     <div class="modal-dialog mt-0 mw-100 m-0" role="document">
       <div class="modal-content rounded-0">
         <div class="modal-body">
-          <div class="col-11 col-sm-8 col-md-8 col-lg-5 mx-auto">
-            <form class="row g-3 align-items-end">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-5 mx-auto">
+            <form class="row g-1 g-sm-3 align-items-end">
               <div class="col-4 col-sm-3 mb-3">
                 <select
                   class="form-select btn btn-dark text-white rounded-0 myselect"
@@ -1212,5 +1240,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="../assets/js/script-min.js"></script>
+  <script src="../assets/js/main.js"></script>
 </html>
