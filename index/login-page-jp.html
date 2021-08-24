@@ -431,36 +431,36 @@
             <div class="col-md-6 mx-auto my-5">
                 <form>
                 <div class="mb-3">
-                    <label for="inputEmail" class="form-label fw-bold"
-                    >メールアドレス</label
-                    >
                     <input
                     type="email"
                     class="form-control rounded-0"
                     id="inputEmail"
                     name="email"
-                    placeholder="メールアドレスを入力してください"
+                    placeholder="メールアドレス"
                     /> 
+                     <div class="invalid-feedback">
+                    すべての必須項目を入力してください
+                    </div>
                 </div> 
                 <div class="mb-3">
-                    <label for="inputPassword" class="form-label fw-bold"
-                    >パスワードを作成</label
-                    >
                     <input
                     type="password"
                     class="form-control rounded-0"
                     id="inputPassword"
                     name="password"
-                    placeholder="パスワードを入力してください"
+                    placeholder="パスワードを作成"
                     />
+                     <div class="invalid-feedback">
+                    すべての必須項目を入力してください
+                    </div>
                 </div>
 
                 <div class="d-flex justify-content-between">
                     <button type="submit" class="btn btn-success rounded-0 px-3">
-                    Submit
+                    ログイン
                     </button>
                     <a href="#" class="text-success" title="Reset your password"
-                    >RESET PASSWORD</a
+                    >パスワードを再設定する</a
                     > 
                 </div>
                 <div>
