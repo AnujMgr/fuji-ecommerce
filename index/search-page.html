@@ -421,257 +421,210 @@
     </div>
   </div>
 </nav>
- 
+
        <section class="my-4 container-xl px-4 px-lg-3 px-xxl-5">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a class="text-dark" href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item active">
-            <a class="text-dark" href="#">Register</a>
-          </li>
-        </ol>
-      </nav>
-    </section>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a class="text-dark" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a class="text-dark" href="#">Search</a>
+                    </li>
+                </ol>
+            </nav>
+        </section>
+        <section class="my-4 container-xl px-4 px-lg-3 px-xxl-5">
+  <div class="row">
+    <h5 class="text-center">Search: "hammer" - 109 results</h5>
+    <div class="col-lg-3">
+      <div class="filters">
+        <h5>Manufacturers</h5>
 
-    <section class="my-4 container-xl px-4 px-lg-3 px-xxl-5 pb-5">
-  <h4 class="text-center">Registration</h4>
-
-  <div class="col-lg-7 mx-auto my-5">
-    <form>
-      <div class="row g-3">
-        <h6 class="mt-3 text-center fw-bold">Company Details</h6>
-
-        <div class="col-md-6 mb-2">
-          <label for="companyName" class="form-label">Company Name</label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="companyName"
-            name="companyName"
-            placeholder="Eg. Fuji Corporation Ltd"
-            required
-          />
+        <div class="d-flex align-items-center mb-1">
+          <input type="checkbox" id="makita" name="manufacturer" value="Bike" />
+          <label for="makita" class="mb-0 ms-2">Makita Corporation</label>
         </div>
-        <div class="col-md-6 mb-2">
-          <label for="companyEmail" class="form-label">Company Email</label>
-          <input
-            type="email"
-            class="form-control rounded-0"
-            id="companyEmail"
-            name="companyEmail"
-            placeholder="Eg. info@jpal.co.jp"
-            required
-          />
+        <div class="d-flex align-items-center mb-1">
+          <input type="checkbox" id="yukiwa" name="manufacturer" value="" />
+          <label for="yukiwa" class="mb-0 ms-2">Yukiwa International Inc</label>
         </div>
-        <div class="col-md-6 mb-2">
-          <label for="phoneNumber" class="form-label"
-            >Company Phone number</label
+        <div class="d-flex align-items-center mb-1">
+          <input
+            type="checkbox"
+            id="transcontainer"
+            name="manufacturer"
+            value=""
+          />
+          <label for="transcontainer" class="mb-0 ms-2"
+            >Transcontainer Ltd</label
           >
-          <input
-            type="tel"
-            class="form-control rounded-0"
-            id="phoneNumber"
-            name="phoneNumber"
-            pattern=""
-            placeholder="Eg. 0263-98-3280"
-            required
-          />
         </div>
+        <div class="d-flex align-items-center">
+          <input type="checkbox" id="kyocera" name="manufacturer" value="" />
+          <label for="kyocera" class="mb-0 ms-2"
+            >Kyocera Industries Tools</label
+          >
+        </div>
+        <hr />
+        <h5>Price</h5>
+        <div class="d-flex align-items-center gap-2">
+          <input
+            type="number"
+            class="form-control"
+            id="minPrice"
+            placeholder="Min"
+          />
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-dash"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+              />
+            </svg>
+          </span>
+          <input
+            type="number"
+            class="form-control"
+            id="maxPrice"
+            placeholder="Max"
+          />
+          <button class="btn btn-success p-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control rounded-0 mb-3"
+          id="search"
+          placeholder="Search.."
+        />
+      </div>
+      <div
+        class="d-flex mt-2 mb-lg-3 gap-2 justify-content-between filter-options"
+      >
+        <div class="d-flex">
+          <select
+            class="form-select rounded-0 p-1"
+            aria-label="Default select example"
+          >
+            <option selected>Sort By:</option>
+            <option value="1">Name: A - Z</option>
+            <option value="1">Name: Z - A</option>
+            <option value="2">Price: High to Low</option>
+            <option value="2">Price: Low to High</option>
+          </select>
+        </div>
+        <button class="btn btn-light d-block d-lg-none filter-btn">
+          Filters
+        </button>
 
-        <h6 class="mt-5 text-center fw-bold">Address</h6>
-        <div class="col-md-6 mb-2">
-          <div class="row">
-            <label for="postalCode" class="form-label">Postal code </label>
-            <div class="col-6">
-              <input
-                type="number"
-                class="form-control rounded-0"
-                id="postalCode"
-                name="postalCode"
-                max="999"
-                min="0"
-                placeholder="Eg. 000"
-                required
+        <div class="product-view-options">
+          <button class="btn list-btn active">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="currentColor"
+              class="bi bi-list-ul"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
               />
-            </div>
-            <div class="col-6">
-              <input
-                type="number"
-                class="form-control rounded-0"
-                id="postalCode2"
-                name="postalCode"
-                max="9999"
-                min="0"
-                placeholder="Eg. 2123"
-                required
+            </svg>
+          </button>
+          <button class="btn grid-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-grid-3x3-gap-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"
               />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="row g-3 mb-5">
+        <div class="col-12 search-item">
+          <a class="text-dark" href="">
+            <figure class="border border-secondary mb-0 p-1 d-none">
+              <img
+                class="search-item-img w-100 img-fluid obj-fit-cover"
+                src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/wen-61720-3-4-inch-to-2-inch-18-gauge-brad-nailer_1_280x280_crop_top.png?v=1595925507"
+                alt="Card image cap"
+              />
+            </figure>
+            <div class="px-0 px-lg-2 border-bottom">
+              <h5 class="title">
+                Makita LCT200W 18-Volt Compact Lithium-Ion Cord...
+              </h5>
+              <h5>¥ 89.00</h5>
             </div>
+          </a>
+        </div>
+        <div class="col-12 search-item">
+          <figure class="border border-secondary mb-0 p-1 d-none">
+            <img
+              class="search-item-img w-100 img-fluid obj-fit-cover"
+              src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/dewalt-dck210s2-12-volt-max-screwdriver-impact-driver-combo-kit_1_780x825_crop_top.png?v=1595925322"
+              alt="Card image cap"
+            />
+          </figure>
+          <div class="px-0 px-lg-2 border-bottom">
+            <h5 class="title">
+              Makita LCT200W 18-Volt Compact Lithium-Ion Cord...
+            </h5>
+            <h5>¥ 89.00</h5>
           </div>
         </div>
-
-        <div class="col-md-6 mb-2">
-          <label for="prefectures" class="form-label">Prefectures </label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="prefectures"
-            name="prefectures"
-            placeholder=""
-            disabled
-          />
-        </div>
-
-        <div class="col-md-6 mb-2">
-          <label for="municipality" class="form-label">Municipality </label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="municipality"
-            name="municipality"
-            disabled
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="address" class="form-label">Address </label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="address"
-            name="address"
-            placeholder="Please Enter Company Address"
-            required
-          />
+        <div class="col-12 search-item">
+          <figure class="border border-secondary mb-0 p-1 d-none">
+            <img
+              class="search-item-img w-100 img-fluid obj-fit-cover"
+              src="https://cdn.shopify.com/s/files/1/0448/0765/1493/products/makita-lct200w-18-volt-compact-lithium-ion-cordless-combo-kit-2-piece_1_279x300_crop_top.png?v=1595925407"
+              alt="Card image cap"
+            />
+          </figure>
+          <div class="px-0 px-lg-2 border-bottom">
+            <h5 class="title">
+              Makita LCT200W 18-Volt Compact Lithium-Ion Cord...
+            </h5>
+            <h5>¥ 89.00</h5>
+          </div>
         </div>
       </div>
-
-      <div class="row g-3">
-        <h6 class="mt-5 text-center fw-bold">For Account Representative</h6>
-        <div class="col-md-6 mb-2">
-          <label for="surname" class="form-label">Surname</label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="surname"
-            name="surname"
-            placeholder="Eg. Yamada"
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="name" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="name"
-            name="name"
-            placeholder="Eg. Taro"
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="surname2" class="form-label">Surname</label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="surname2"
-            name="surname2"
-            placeholder="Eg. Yamada"
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="name2" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="name2"
-            name="name2"
-            placeholder="Eg. Taro"
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="companyPosition" class="form-label"
-            >Company Position</label
-          >
-          <input
-            type="text"
-            class="form-control rounded-0"
-            id="companyPosition"
-            name="companyPosition"
-            placeholder="Eg. Manager"
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="representativePhoneNumber" class="form-label"
-            >Phone Number</label
-          >
-          <input
-            type="tel"
-            class="form-control rounded-0"
-            id="representativePhoneNumber"
-            name="representativePhoneNumber"
-            placeholder="Eg. 0263-98-3280"
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="representativeEmail" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control rounded-0"
-            id="representativeEmail"
-            name="representativeEmail"
-            placeholder="Eg. "
-            required
-          />
-        </div>
-      </div>
-
-      <div class="row g-3">
-        <h6 class="mt-5 text-center fw-bold">Password</h6>
-        <div class="col-md-6 mb-2">
-          <label for="password" class="form-label">Create a password</label>
-          <input
-            type="password"
-            class="form-control rounded-0"
-            id="password"
-            name="password"
-            placeholder="Please Enter Password"
-            required
-          />
-        </div>
-        <div class="col-md-6 mb-2">
-          <label for="rePassword" class="form-label"
-            >Re enter the password</label
-          >
-          <input
-            type="password"
-            class="form-control rounded-0"
-            id="rePassword"
-            name="rePassword"
-            placeholder="Please Re-Enter Password"
-            required
-          />
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-between mt-3">
-        <button type="submit" class="btn btn-success rounded-0 px-3">
-          Submit
-        </button>
-      </div>
-    </form>
+    </div>
   </div>
 </section>
- 
-    
+
     <footer class="container-xl mb-4 py-2 px-4 px-lg-3 px-xxl-5">
   <div class="row">
     <div class="col-12 col-md-4">
