@@ -83,6 +83,42 @@ $(".year").append(new Date().getFullYear());
 var height = $("header").height();
 $(".main-banner").css({ height: "calc(80vh - " + height + "px)" });
 
+$(".filter-btn").click(function () {
+  var height = $(".filter-options").height() + 20;
+  var top = $(".filters").position().top;
+  var filterHeight = $(".filter-options").position().top;
+  $(this).toggleClass("bg-success text-white");
+
+  if (top - filterHeight > 0) {
+    $(".filters").css({ bottom: `${height}px` });
+    $(".toTop").css({ bottom: `100px` });
+  } else {
+    $(".filters").css({ bottom: `-450px` });
+    $(".toTop").css({ bottom: `50px` });
+  }
+});
+
+$(".grid-btn").click(function () {
+  $(this).addClass("active");
+  $(".list-btn").removeClass("active");
+  $(".list-btn").removeClass("active");
+  $(".search-item").addClass("col-6 col-md-4");
+  $(".search-item").removeClass("col-12");
+  $(".search-item").find("figure").removeClass("d-none");
+  $(".title").addClass("h6 mt-3");
+  $(".search-item").find("div").removeClass("px-0 px-lg-2 border-bottom");
+});
+
+$(".list-btn").click(function () {
+  $(this).addClass("active");
+  $(".grid-btn").removeClass("active");
+  $(".search-item").removeClass("col-6 col-md-4");
+  $(".search-item").addClass("col-12");
+  $(".search-item").find("figure").addClass("d-none");
+  $(".search-item").find("div").addClass("border-bottom");
+  $(".title").removeClass("h6 mt-3");
+});
+
 // Owl Carousel with Thumbnails
 var sync1 = $(".thumbnail-carousel-slider");
 var sync2 = $(".carousel-thumbs");
@@ -164,3 +200,27 @@ var thumbs = sync2
     $owl_slider = sync1.data("owl.carousel");
     $owl_slider.to(number, 100, true);
   });
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
